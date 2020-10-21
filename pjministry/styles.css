@@ -85,7 +85,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #D2B48C;
+    background: #c92f2f;
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -191,8 +191,7 @@
 
 /*=== Hero === */
 .hero{
-    background: #FAF0E6;
-    padding: 200px 0;
+    padding: 10px 0;
 }
 
 .hero__container{
@@ -214,6 +213,17 @@
 }
 
 
+@media screen and (max-width: 760px){
+    .hero__heading{
+        font-size: 60px;
+    }
+    .hero__description{
+        font-size: 40px;
+    }
+}
+
+
+
 /*=== Slides ===*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
@@ -229,7 +239,7 @@
     position: relative;
     overflow: hidden;
     height: 50vh;
-    width: 50vh;    
+    width: 100%;    
 }
 
 .slide{
@@ -244,4 +254,31 @@
 
 .slide.current{
     opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    width: 600px;
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    padding: 35px;
+    opacity: 0;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+/* Background Images */
+.slide:first-child{
+    background: url('./img/computer.jpg') no-repeat center center/cover;
+    background-size: 100% 100%;
 }
