@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +8,7 @@
     scroll-behavior: smooth;
 }
 .navbar {
-    background: #FAEBD7;
+    background:#FFEBCD ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -15,6 +17,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    margin: 0;
 }
 
 .navbar__container{
@@ -29,7 +32,7 @@
 }
 
 #navbar__logo {
-    background: #D2B48C;
+    background: #A52A2A;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -53,7 +56,7 @@
 }
 
 .navbar__links{
-    color: #DEB887;
+    color: #A52A2A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +91,7 @@
 }
 
 .navbar__links:hover{
-    color:  #800000;
+    color:  #000000;
     transition: all 0.3s ease;
 }
 
@@ -134,7 +137,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background:  #A52A2A; 
     }
 
     .navbar__item{
@@ -184,4 +187,61 @@
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg)
     }
+}
+
+/*=== Hero === */
+.hero{
+    background: #FAF0E6;
+    padding: 200px 0;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero__heading{
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+
+/*=== Slides ===*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.sliding-window {
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    width: 50vh;    
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
 }
