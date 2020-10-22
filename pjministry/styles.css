@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 .navbar {
-    background:#FFEBCD ;
+    background:#FFEBCD;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -207,7 +207,7 @@
 }
 
 .hero__heading{
-    font-size: 100px;
+    font-size: 50px;
     margin-bottom: 24px;
     color: #fff;
 }
@@ -222,7 +222,54 @@
     }
 }
 
+.main__btn{
+    font-size: 1.8rem;
+    background: #c92f2f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
 
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main__btn::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover{
+    color: #fff;
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 960px){
+    .main__btn{
+        opacity: 0;
+    }
+}
 
 /*=== Slides ===*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -276,6 +323,33 @@
     transform: translateX(600px);
     transition: all 0.7s ease-in-out 0.3s;
 }
+
+#next {
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+#prev {
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
 
 /* Background Images */
 .slide:first-child{
