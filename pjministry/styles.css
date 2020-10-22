@@ -215,10 +215,10 @@
 
 @media screen and (max-width: 760px){
     .hero__heading{
-        font-size: 60px;
+        font-size: 20px;
     }
     .hero__description{
-        font-size: 40px;
+        font-size: 15px;
     }
 }
 
@@ -285,7 +285,7 @@
 .slider{
     position: relative;
     overflow: hidden;
-    height: 75vh;
+    height: 50vh;
     width: 100%;    
 }
 
