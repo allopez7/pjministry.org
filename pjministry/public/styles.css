@@ -207,13 +207,23 @@ title{
     background-color: #FFEBCD;
 }
 
+.established{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    line-height: 1.5;
+    padding: 10px;
+}
+
 .text-container{
     font-size: large;
     width: 100%;
     padding: 100px;
     text-align: center;
     line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     color: #A52A2A;
     display: flex;
     flex-direction: column;
