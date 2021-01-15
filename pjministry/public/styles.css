@@ -4,12 +4,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Kumbh Sans", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
 title{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #FFEBCD;
 }
 
 .navbar {
@@ -102,7 +106,7 @@ title{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1200px){
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -209,11 +213,19 @@ title{
 
 .established{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
     line-height: 1.5;
+    padding: 50px;
+    color: #A52A2A;
+    background-color: #FFEBCD;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.founders{
+    margin: auto;
     padding: 10px;
 }
 
@@ -229,18 +241,53 @@ title{
     flex-direction: column;
 }
 
+.history-container{
+      font-size: large;
+    width: 100%;
+    padding: 100px;
+    text-align: left;
+    line-height: 1.5;
+    font-family: Georgia;
+    color: #A52A2A;
+    display: flex;
+    flex-direction: column;
+}
+
+#history-paragraph{
+    text-indent: 10%;
+}
+p{
+    text-indent: 1.5em;
+}
+
+.history-vision{
+    text-align: center;
+}
+
+.movie-title{
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    color: #A52A2A;
+}
+
 .jesus-image{
     border: 3px solid #A52A2A;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
 }
 
 .cross-image{
     border: 3px solid #A52A2A;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
 }
 
 @media (max-width: 800px){
     .top{
+        flex-direction: column;
+    }
+    .established{
         flex-direction: column;
     }
 }
@@ -320,6 +367,142 @@ title{
     width: 100%;
 }
 
+.main__video--container{
+    border: 5px solid #A52A2A;
+}
+
+.testimonies-container{
+    padding: 100px;
+    font-size: large;
+    color: #A42A2A;
+    text-align: center;
+}
+
+.testimonies-barbershop-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        align-items: center;
+
+}
+
+.marycard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+    padding: 10px
+}
+
+.marycard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.mary{
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.garycard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 10px
+}
+
+.garycard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.gary{
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.henrycard{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+    padding: 10px
+}
+
+.henrycard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.henry{
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.barber-img-size{
+    height: 150px;
+    width: 150px;
+}
+
+.pj-celebrations{
+    text-decoration: underline;
+}
+
+.celebration-img-size{
+    height: 600px;
+    width: 600px;
+}
+
+.saintpatricksday{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.fourthofjuly{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.thanksgiving{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.christmasgraduation{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+@media(max-width: 600px){
+.celebration-img-size{
+    height: 400px;
+    width: 400px;
+}
+    .barber-img-size{
+        height: 100px;
+        width: 100px;
+    }
+    .testimonies-barbershop-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 490px){
+.celebration-img-size{
+    height: 200px;
+    width: 200px;
+}
+    .barber-img-size{
+        height: 75px;
+        width: 75px;
+    }
+    .testimonies-barbershop-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media only screen and (min-width: 960px){
     .main__btn{
@@ -331,18 +514,23 @@ title{
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .sliding-window {
-    font-family: 'Roboto', sans-serif;
     background: #333;
     color: #fff;
     line-height: 1.6;
+    background-color: #FFEBCD;
+    height: 55vh;
+    border: 1px solid black;
 }
 
 
 .slider{
     position: relative;
     overflow: hidden;
-    height: 50vh;
-    width: 100%;    
+    height: 54vh;
+    width: 50%;    
+    margin: auto;
+    border: 3px solid #A52A2A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slide{
@@ -381,12 +569,9 @@ title{
 }
 
 #next {
-    position: absolute;
-    top: 30%;
-    right: 15px;
-    border: 2px solid #fff;
+    border: 2px solid #A52A2A;
     background-color: transparent;
-    color: white;
+    color: #A52A2A;
     cursor: pointer;
     padding: 13px 15px;
     border-radius: 50%;
@@ -394,16 +579,22 @@ title{
 }
 
 #prev {
-    position: absolute;
-    top: 30%;
-    left: 15px;
-    border: 2px solid #fff;
+    border: 2px solid #A52A2A;
     background-color: transparent;
-    color: white;
+    color:#A52A2A;
     cursor: pointer;
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
+}
+
+.buttons{
+    padding: 20px;
+    position: relative;
+    bottom: 300px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;    
 }
 
 #next:hover{
@@ -431,12 +622,13 @@ title{
 
 /* Background Images */
 .slide:first-child{
-    background: url('./img/computer.jpg') no-repeat center center/cover;
+    background: url('./img/pjministry.png') no-repeat center center/cover;
     background-size: 100% 100%;
 }
 
 .slide:nth-child(2){
-    background: url('./images/computer.jpg') no-repeat center top/cover;
+    background: url('./img/founders.png') no-repeat center top/cover;
+    background-size: 100% 100%;
 }
 
 
@@ -604,7 +796,7 @@ title{
 @media screen and (max-width: 480px){
     .footer__link--items{
         margin: 0;
-        padding: 10px;
+        padding: 5px;
         width: 100%;
     }
 }
