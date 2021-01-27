@@ -227,6 +227,7 @@ body{
 .founders{
     margin: auto;
     padding: 10px;
+    text-align: center;
 }
 
 .text-container{
@@ -471,6 +472,16 @@ p{
     border: 2px solid  #A52A2A;
 }
 
+#border{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid  #A52A2A;
+}
+
+.international-sm-img-size{
+    height: 200px;
+    width: 200px;
+}
+
 @media(max-width: 600px){
 .celebration-img-size{
     height: 400px;
@@ -518,7 +529,7 @@ p{
     color: #fff;
     line-height: 1.6;
     background-color: #FFEBCD;
-    height: 55vh;
+    height: 46vh;
     border: 1px solid black;
 }
 
@@ -526,11 +537,48 @@ p{
 .slider{
     position: relative;
     overflow: hidden;
-    height: 54vh;
-    width: 50%;    
+    height: 45vh;
+    width: 500px;    
     margin: auto;
     border: 3px solid #A52A2A;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons{
+    padding: 20px;
+    position: relative;
+    bottom: 300px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;    
+}
+
+@media(max-width: 800px){
+    .slider{
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+    width: 300px;    
+    margin: auto;
+    border: 3px solid #A52A2A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+.sliding-window {
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    background-color: #FFEBCD;
+    height: 31vh;
+    border: 1px solid black;
+}
+.buttons{
+    padding: 20px;
+    position: relative;
+    bottom: 200px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;    
+}
 }
 
 .slide{
@@ -586,15 +634,6 @@ p{
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
-}
-
-.buttons{
-    padding: 20px;
-    position: relative;
-    bottom: 300px;
-    left: 0;
-    display: flex;
-    justify-content: space-between;    
 }
 
 #next:hover{
